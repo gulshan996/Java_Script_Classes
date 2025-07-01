@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pattern</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      display: flex;
+      justify-content: center;
+      margin-top: 5vh;
+    }
+  </style>
+  <script>
+    // the pattern is :-
+    // x x x x x
+    // x     x x
+    // x   x   x
+    // x x     x
+    // x x x x x
+    // let n = 5;
+    // let res = "";
+    // // count = 1;
+    // for (let i = 1; i <= n; i++) {
+    //   for(let j=1; j<=n; j++){
+    //   if(i==1||j==1||i==n||j==n||j+i==n+1){
+    //     res+='x';
+    //   }else{
+    //     res+='_';
+    //   }
+    // }
+    // res+='\n'; 
+    // }
+    // console.log(res);
+
+
+    // The pattern is :-
+    // x x x x x
+    // x x x x x
+    // x x x   x
+    // x x     x
+    // x x x x x
+    // let n = 5;
+    // let res = "";
+    // // count = 1;
+    // for (let i = 1; i <= n; i++) {
+    //   for(let j=1; j<=n; j++){
+    //   if(i+j<=n+1|| i===n||j==n){
+    //     res+='x';
+    //   }else{
+    //     res+='_';
+    //   }
+    // }
+    // res+='\n'; 
+    // }
+    // console.log(res);
+
+
+    // res='';
+    // let n = 5;
+    
+    // for (let i = 1; i <=n; i++) {
+    //   let res = "";
+    //   for (let j = 1; j <=n-i; j++) {
+    //     res += " ";
+    //   }
+    //   for (let k = 1 ; k <= ((2 * i) - 1); k++) {
+    //     res += "*";
+    //   }
+    //   console.log(res);
+     
+    // }
+     
+   
+
+    // res+='\n'
+
+
+    // let n = 5;
+    
+    // for (let i = 1; i <=n; i++) {
+    //   let res = "";
+    //   for (let j = 5; j <=n-i; j++) {
+    //     res += " ";
+    //   }
+    //   for (let k = 1 ; k <= i; k++) {
+    //     res += "*";
+    //   }
+    //   console.log(res);
+     
+    // }
+
+
+    let n = 4;
+    
+    for (let i = 1; i <=n; i++) {
+      let res = "";
+      for (let j = 1; j <=n-i; j++) {
+        res += " ";
+      }
+      for (let k = 1 ; k <= ((2 * i) - 1); k++) {
+        res += "*";
+      }
+      
+      console.log(res);
+     
+    }
+    for (let i = n-1; i >=1; i--) {
+      let res = "";
+      for (let j = 1; j <=n-i; j++) {
+        res += " ";
+      }
+      for (let k = 1 ; k <= ((2 * i) - 1); k++) {
+        res += "*";
+      }
+      
+      console.log(res);
+     
+    }
+     
+
+     
+
+
+  </script>
+</head>
+
+<body>
+  <h1>htttt</h1>
+</body>
+
+</html>
