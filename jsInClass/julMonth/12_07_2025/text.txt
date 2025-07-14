@@ -1,0 +1,105 @@
+different between let const and var;
+var---
+
+1- var is introduced in before the ES6 version .
+2- var keyword variable has function scope .
+3- var keyword variable are hoisted . 
+4- var can be re-initialization and re-declaration.
+
+let ------
+ 
+ 1- let is introduced in the ES6 version.
+ 2- let keyword variable has block scope.
+ 3- let keyword variable are hoisted but not initialized.
+ 4 let keyword variable is re-initialization but not a re-declaration.
+
+ const ---
+
+ 1- const is also introduced in the ES6 version.
+ 2- const keyword variable has also a block scope.
+ 3- const keyword variable are hoisted  but not initialized.
+ 4- const keyword variable is not a re-initialization and not a re- declaration.
+ 5- const keyword variable  must be initialized value at the time of declaration.
+
+what is function;
+
+A function is a set of statements used to perform a specific task.
+
+In js 3 type of functions;
+1-  function declaration  2- function expression  3- arrow function;
+1- function declaration -- i- create a function with function keyword followed by function name is known as function declaration.
+                          ii- it is a block of code should not use semicolon to end.
+                          ii- it can be used before creation.
+
+
+2- function expression --  i- create a anonymous function and assigning to the variables is known as function expression.
+                          ii- it is a group of statements so we should use semicolon at the  end.
+                          ii- it can be not used before creation.
+ anonymous function -- A function without function name is known as anonymous function.
+
+
+
+3- arrow function-- An arrow function is a shorter and cleaner way to write functions in JavaScript it is introduced in ES6 version.
+
+
+
+function main(){
+  console.log('hello');
+}
+main();
+
+
+
+
+let express = function(){
+  console.log('hii')
+}
+express();
+
+
+let arrow=()=>{
+  console.log('bye')
+}
+arrow();
+
+what is js?
+js is a scripting language which is used to control the behavior of webpage
+and it is clint side programming language we can not execute js file directly     
+
+what is keyword?
+key word is predefine word or reserved word in a programming language that has a special meaning.
+
+what is variable?
+variable is container which is use to store a single value.
+in js we can create a variables in three way--
+var , let and const.
+
+what is data type?
+in JavaScript data type is represent the type of data.
+their are 2 type of data type--
+1- primitive data type.
+2- non-primitive data type.
+
+primitive data type --
+primitive data type is holing a single value and it is non-mutable.
+there are 7 type of primitive data type-
+1- Number 2- sting 3- boolean 4- null 5- undefined 6- bigInt 7- symbol.
+
+non-primitive data type--
+it is holing collection of values and it is mutable.
+just like --
+objects, array, functions
+
+what is operators?
+it is symbol used to perform operations on value and variables.
+there are 7 type of operators--
+1- Arithmetic op.+,-,* , /, %
+2- logical op. && , ||
+3- assignment op. = == <= >= <> ===
+4- comparison op. true false
+5- sting op.
+6- type op. / bitwise op.
+7- ternary op.
+
+good morning ma'am my name is Gulshan Kumar and from Reabareli Utter Pradesh and i'm currently pursuing my B.tach 3rd year in computer sienese from js university Shikohabaad and i have to strong in web development and software engineering 
+i specialize in the MERN full stack and also practice in  dsa using JavaScript to improve my problem solving skills.and I believe in consistency, discipline, and a growth mindset. I'm looking forward to working in an organization where I can apply my skills.

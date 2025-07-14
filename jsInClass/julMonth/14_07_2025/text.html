@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <script>
+    function main() {
+      console.log(this);
+    }
+    main();
+
+    let m1 = () => {
+      console.log(this);
+    }
+    m1();
+
+    'use strict'
+    function gul() {
+      console.log(this);
+      let m2 = () => {
+        console.log(this);
+      }
+      m2()
+    }
+    gul();
+    
+  </script>
+</head>
+
+<body>
+  <h1 style="text-align: center; font-size:4rem; color: red;">this concept</h1>
+</body>
+
+</html>
