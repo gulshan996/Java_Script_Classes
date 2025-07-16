@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Document</title>
+
+<script>
+//   let users = function () {
+//     let user = 'gulshan';
+//     let inner=()=>   {
+//       let lastName = 'kumar'
+//       console.log(user);
+//     }
+
+//     return inner
+//     }
+//  let retVlu= users();
+// retVlu()
+  // let users = function () {
+  //   let user = 'gulshan';
+  //   let inner=()=>   {
+  //     let lastName = 'kumar'
+  //     let tooInner=()=> {
+  //       console.log(lastName);
+  //       // console.log(Name);
+  //     }
+  //     tooInner()
+  //     console.log(lastName);
+  //     console.log(user);
+  //   }
+  //   inner();
+  //   // console.log(lastName); you can not access your child value but you can access the parent value
+  // }
+  // users();
+
+  
+
+</script>
+</head>
+
+<body>
+<button id="red">red</button>
+<button id="green">green</button>
+<script>
+    function clickHandler(color){
+    return function(){
+      document.body.style.backgroundColor=color
+    }
+  }
+  document.getElementById('red').onclick=clickHandler('red')
+  document.getElementById('green').onclick=clickHandler('green')
+
+</script>
+</body>
+
+</html>

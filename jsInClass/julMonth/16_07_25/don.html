@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+</head>
+<body>
+  <h1 id="head">good boy</h1>
+  <h1 class="heading">good morning</h1>
+  <p class="heading">good morning</p>
+  <h1 name="h1">good morning</h1>
+  <h2 id="hindi">hindi</h2>
+  <h2 class="english">hindi</h2>
+  <h2 class="english">hindi</h2>
+  <script>
+    let headings=document.getElementsByClassName('heading')
+    // headings[0].innerText='good evening'
+    for(let i=0; i<headings.length; i++){
+      headings[i].innerText='lulu'
+    }
+    console.log(headings);
+
+    let heads=document.getElementById('head')
+    heads.innerHTML='gulshan';
+
+    let byName=document.getElementsByName('h1');
+    console.log(byName);
+    byName[0].innerText='jai shri ram';
+    let changeHindi=document.querySelector('#hindi');
+    hindi.innerText='change in hindi';
+    let changeEnglish=document.querySelectorAll('.english');
+    console.log(changeEnglish);
+    changeEnglish[0].innerText='change the elements in english'
+    changeEnglish[1].innerText='change the elements in urdu'
+
+
+  </script>
+  
+</body>
+</html>

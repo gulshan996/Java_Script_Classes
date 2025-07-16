@@ -97,9 +97,19 @@ there are 7 type of operators--
 2- logical op. && , ||
 3- assignment op. = == <= >= <> ===
 4- comparison op. true false
-5- sting op.
+5- string op.
 6- type op. / bitwise op.
 7- ternary op.
 
 good morning ma'am my name is Gulshan Kumar and from Reabareli Utter Pradesh and i'm currently pursuing my B.tach 3rd year in computer sienese from js university Shikohabaad and i have to strong in web development and software engineering 
 i specialize in the MERN full stack and also practice in  dsa using JavaScript to improve my problem solving skills.and I believe in consistency, discipline, and a growth mindset. I'm looking forward to working in an organization where I can apply my skills.
+
+
+what is callback function?
+A function which is passed to the as a argument to another function is known as callback function.
+
+what is higher order function?
+A function which is accepting a function as a parameter in known as higher order function.
+
+
+  the function is known as 
