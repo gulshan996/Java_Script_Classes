@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: 2px solid black;
+        }
+        td{
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>My Cart</h1>
+        <table border>
+            <thead>
+                <tr>
+                    <td>Items</td>
+                    <td>qnt</td>
+                    <td>Price</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Biriyani</td>
+                    <td>
+                        <button class="button" id="minus">-</button>
+                        <span class="val" id="val">1</span>
+                        <button class="button" id="plus">+</button>
+                    </td>
+                    <td id="ival1">249</td>
+                </tr>
+                <tr>
+                    <td>Kabab</td>
+                    <td>
+                        <button class="button" id="minus1">-</button>
+                        <span class="val" id="val1">1</span>
+                        <button class="button" id="plus1">+</button>
+                    </td>
+                    <td id="ival2">99</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        total
+                    </td>
+                    <td id="mainval">348</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script>
+        let mainval=document.getElementById('mainval')
+        let plus=document.getElementById('plus')
+        let minus=document.getElementById('minus')
+        let val=document.getElementById('val')
+        let plus1=document.getElementById('plus1')
+        let minus1=document.getElementById('minus1')
+        let val1=document.getElementById('val1')
+        let ival1=document.getElementById('ival1')
+        let ival2=document.getElementById('ival2')
+        let add1=1
+        let add2=1
+        let value=249;
+        let value1=99
+        plus.addEventListener('click',()=>{
+            add1+=1
+            value+=249
+            val.innerText=add1;
+            ival1.innerText=value
+            let res=value+value1
+            mainval.innerText=res
+        })
+        
+        
+        minus.addEventListener('click',()=>{
+            
+            if (add1>0 && value>249 ) {
+                add1-=1
+                value-=249
+                val.innerText=add1;
+                ival1.innerText=value
+                let res=value+value1
+                mainval.innerText=res
+            }
+        })
+
+        plus1.addEventListener('click',()=>{
+            add2+=1
+            value1+=99
+            val1.innerText=add;
+            ival2.innerText=value1
+            let res=value+value1
+            mainval.innerText=res
+        })
+        
+        
+        minus1.addEventListener('click',()=>{
+            if (add1>0 && value1>99 ) {
+                add2-=1
+                value1-=99
+                val1.innerText=add2;
+                ival2.innerText=value1
+                let res=value+value1
+                mainval.innerText=res
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <input type="text" name="" id="product" placeholder="inter your product name">
+  <button id="btn">add</button>
+  <div id="container">
+    <h1>No product added</h1>
+  </div>
+  <script>
+    let productInput = document.getElementById('product')
+    let addBtn = document.getElementById('btn')
+    let divContainer = document.getElementById('container')
+    let allProduct = localStorage.getItem('products') ? JSON.parse(localStorage.getItem(product)) : [];
+    if (allProduct.lengh > 0) {
+      displayProducts()
+    }
+    addBtn.addEventListener('click', () => {
+      let product = productInput.value
+      if (product) {
+        allProduct.push(product)
+        localStorage.setItem('product', JSON.stringify(allProduct))
+        // show the products as a list items
+        displayProducts()
+        productInput.value='';
+      } else {
+        alert('write a product name before adding')
+      }
+    })
+    function displayProducts() {
+      let str = '';
+      allProduct.forEach((ele, i) => {
+        str += `<li>
+          <span>${ele}</span>
+          <button onclick='deleteProduct(${i})'>del</button>
+          </li>`
+      })
+      divContainer.innerHTML = str
+    }
+    function deleteProduct(index) {
+      allProduct.splice(index, 1)
+      localStorage.setItem('product', JSON.stringify(allProduct))
+
+      displayProducts()
+    }
+
+
+  </script>
+</body>
+
+</html>

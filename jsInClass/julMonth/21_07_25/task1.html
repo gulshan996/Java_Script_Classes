@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html,
+
+
+    #main {
+      height: 30rem;
+      border: 2px solid black;
+      width: 25rem;
+    
+    }
+
+    #changeBox {
+      height: 8rem;
+      width: 12rem;
+      border: 3px solid black;
+      /* background: red; */
+    }
+  </style>
+</head>
+
+<body>
+  <div id="main">
+      <div id="changeBox">
+    </div >
+    <button id="sky">sky</button>
+    <button id="sea">sea</button>
+    <button id="mountain">mountain</button>
+  </div>
+  <script>
+    let changeBox=document.getElementById('changeBox')
+    let sky=document.getElementById('sky')
+    // console.log(sky);
+    let sea=document.getElementById('sea')
+    let mountain=document.getElementById('mountain')
+
+    sky.addEventListener('click',()=>{
+      console.log('sky');
+      changeBox.innerHTML=`<img src="/WhatsApp Image 2024-05-22 at 19.12.53_82b13e8f.jpg ">`
+    })
+    sea.addEventListener('click',()=>{
+      console.log('sea');
+    })
+    mountain.addEventListener('click',()=>{
+      console.log('mountain');
+    })
+  </script>
+</body>
+
+</html>

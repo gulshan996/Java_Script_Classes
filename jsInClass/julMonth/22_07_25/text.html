@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .parent {
+      height: 300px;
+      width: 400px;
+      background: red;
+      align-content: center;
+      text-align: center;
+    }
+
+    .child {
+      margin: auto;
+      height: 200px;
+      width: 300px;
+      background: rgb(221, 136, 18);
+      text-align: center;
+      align-content: center;
+    }
+
+    button {
+      padding: 20px 40px;
+      background: rgb(43, 14, 131);
+      color: wheat;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="parent">
+    <div class="child">
+      <button id="btn">click me!</button>
+      <!-- <div class="innerChild">
+      </div> -->
+    </div>
+  </div>
+  <script>
+    let parentTag = document.querySelector('.parent')
+    let childTag = document.querySelector('.child')
+    let btnTag = document.querySelector('#btn')
+    parentTag.addEventListener('click', () => {
+      console.log('parent event triggered');
+    })
+    childTag.addEventListener('click', () => {
+      console.log('child event triggered');
+    })
+    btnTag.addEventListener('click', (event) => { 
+      console.log('button event triggered');
+      event.stopPropagation()
+    })
+  </script>
+</body>
+
+</html>

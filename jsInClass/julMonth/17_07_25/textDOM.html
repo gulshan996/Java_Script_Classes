@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="abc">
+    <h1>dom methods and property</h1>
+  </div>
+  <p class="xyz"> this is p tag</p>
+  <h2>welcome to  the dom class</h2>
+  <a href="#">google</a>
+  <script>
+    let divElement=document.getElementById('abc')
+    let pTag = document.querySelector('.xyz')
+    let h2Tag= document.getElementsByTagName('h2')[0]
+
+    divElement.innerHTML='<h1>hello world</h1>'
+    pTag.innerText='gulshan'
+    h2Tag.textContent='jai mata di'
+    let bd=document.querySelector('body')
+    console.log(bd);
+    bd.style.backgroundColor='yellow'
+    pTag.style.color='green'
+    divElement.style.color='tomato'!
+    document.querySelector('a').href='https://www.google.com'
+    document.querySelector('a').target='_blank'
+
+  </script>
+</body>
+</html>

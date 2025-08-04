@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background: #e48181;
+    }
+    #changeColor {
+      border: 2px solid rgb(0, 0, 0);
+      height: 23rem;
+      width: 45rem;
+      text-align: center;
+      align-content: center;
+      justify-content: center;
+    }
+    #input{
+      height: 2rem;
+      font-size: 1.5rem;
+      background: transparent;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="changeColor">
+
+    <form action="" >
+      <label>Your color :</label>
+
+      <input type="text" name="" id="input" placeholder="change your color name">
+      <button id="changer">changeColor</button>
+    </form>
+  </div>
+
+  <script>
+    let changeColor = document.getElementById('changeColor')
+    let changeBtn = document.getElementById('changer')
+    let input=document.getElementById('input')
+    changeBtn.addEventListener('click',()=>{
+      event.preventDefault()
+     let color=input.value.trim();
+     changeColor.style.backgroundColor=color
+    changer.style.backgroundColor=color
+    input.style.Color=color
+
+
+    })
+  
+  </script>
+</body>
+
+</html>

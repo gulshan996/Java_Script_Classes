@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html,
+    body {
+     height: 100%;
+     width: 100%;
+    }
+    form{
+      display: flex;
+      flex-direction: column;
+      width: auto;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    #main {
+      height: 50vh;
+      width: 50%;
+      border: 2px solid black;
+      align-content: center;
+      text-align: center;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div id="main">
+    <form action="">
+      <label for="">Name :</label>
+      <input type="text" name="" class="name">
+      <label for="">Address :</label>
+      <input type="text" name="" id="address">
+      <button class="btn">show Name</button>
+      <div>
+        <h1 id="showName"> </h1>
+      </div>
+    </form>
+  </div>
+<script>
+  let fullName = document.querySelector('.name')
+  let fullAddress = document.querySelector('#address')
+  let showName = document.querySelector('#showName')
+  let showBtn=document.querySelector('.btn')
+  // console.log(fullName);
+  showBtn.addEventListener('click',()=>{
+    event.preventDefault()
+    showName.innerText=`Hii I am ${fullName.value} and i am from ${fullAddress.value}`
+  })
+</script>
+</body>
+
+</html>

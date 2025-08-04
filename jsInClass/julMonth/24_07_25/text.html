@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="pbtn">+</button>
+  <span id="view"></span>
+  <button id="mbtn">-</button>
+
+  <script>
+    let pbtn=document.querySelector('#pbtn');
+    let mbtn=document.querySelector('#mbtn');
+    let view=document.querySelector('#view');
+    let count=localStorage.getItem('value')?localStorage.getItem('value'):0;
+    view.innerText=count;
+    pbtn.addEventListener('click',(e)=>{
+      console.log(e.target.innerText);
+      count++
+      view.innerText=count;
+      localStorage.setItem('value',count)
+    })
+    mbtn.addEventListener('click',()=>{
+      console.log(event);
+      count--;
+      view.innerText=count;
+      localStorage.setItem('value',count)
+    })
+
+    // set
+
+    // localStorage.setItem('Number',99);
+    // localStorage.setItem('Name','Gulshan kumar');
+    // localStorage.setItem('gmail','eng.gulshankumar@gmail.com');
+
+    // get
+
+    // console.log(localStorage.getItem('gmail'));
+
+    // remove
+
+    // localStorage.removeItem('Number');
+
+    // clear
+
+    // localStorage.clear();
+  </script>
+</body>
+</html>

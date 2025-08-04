@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button id="increes">+</button>
+  <span id="val">0</span>
+  <button id="decrees">-</button>
+  <script>
+    let increase = document.querySelector('#increes');
+    console.log(increase);
+    let decrees = document.getElementById('decrees');
+    console.log(decrees);
+    let val = document.getElementById('val');
+    console.log(val);
+
+    let plus = 1;
+    increes.addEventListener('click', () => {
+      val.innerText = plus++
+    })
+    decrees.addEventListener('click', () => {
+      val.innerText = plus--
+    })
+  </script>
+</body>
+
+</html>

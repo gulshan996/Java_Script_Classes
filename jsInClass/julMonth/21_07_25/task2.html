@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .main{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    #container{
+      border: 2px solid black;
+      height: 400px;
+      width: 500px;
+    
+    }
+    table{
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <h1>My cart</h1>
+    <div id="container">
+   <table border>
+            <thead>
+                <tr>
+                    <td>Items</td>
+                    <td>qnt</td>
+                    <td>Price</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Biriyani</td>
+                    <td>
+                        <button class="button" id="minus">-</button>
+                        <span class="val" id="val">1</span>
+                        <button class="button" id="plus">+</button>
+                    </td>
+                    <td id="ival1">249</td>
+                </tr>
+                <tr>
+                    <td>Kabab</td>
+                    <td>
+                        <button class="button" id="minus1">-</button>
+                        <span class="val" id="val1">1</span>
+                        <button class="button" id="plus1">+</button>
+                    </td>
+                    <td id="ival2">99</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        total
+                    </td>
+                    <td id="mainval">348</td>
+                </tr>
+            </tbody>
+        </table>
+</div>
+  </div>
+
+  <script>
+let increseBtn=document.querySelector('#increse')
+let decreesBtn=document.querySelector('#decrees')
+let countItem=document.querySelector('#countItem')
+let ItemPrice=document.querySelector('#ItemPrice')
+let totalCount=document.querySelector('#totalCount')
+let count=1;
+let price=249
+increseBtn.addEventListener('click',()=>{
+  console.log('object');
+  countItem.innerText=count++;
+  if(count){
+
+    ItemPrice.innerText=price+price;
+  }
+})
+decreesBtn.addEventListener('click',()=>{
+  console.log('total');
+})
+
+
+
+
+  </script>
+</body>
+</html>

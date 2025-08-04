@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="main">
+    <form action="">
+      <label for="">Red :</label>
+      <input type="number" name="" id="redColor">
+      <label for="">Green :</label>
+      <input type="number" name="" id="greenColor">
+      <label for="">Blue :</label>
+      <input type="number" name="" id="blueColor">
+      <button id="genBtn">Generate</button>
+      <input type="color" name="" id="color">
+    </form>
+  </div>
+
+  <script>
+    let redInput=document.querySelector('#redColor');
+    let greenInput=document.querySelector('#greenColor');
+    let blueInput=document.querySelector('#blueColor');
+    let btnGen=document.querySelector('#genBtn');
+    let showColor=document.querySelector('#color');
+    console.log(redInput.value);
+  
+    btnGen.addEventListener('click',()=>{
+      event.preventDefault();
+    })
+  </script>
+</body>
+</html>

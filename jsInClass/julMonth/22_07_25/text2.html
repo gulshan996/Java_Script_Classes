@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html, body{
+      height: 100%;
+      width: 100%;
+      align-content: center;
+      justify-items: center;
+      margin: auto;
+    }
+    #parent{
+      background: red;
+      height: 3rem;
+      width: 19rem;
+    }
+    button{
+      height: 3rem;
+      width: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="parent">
+
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>4</button>
+    <button>5</button>
+  </div>
+  <script>
+    let parentDiv=document.getElementById('parent');
+    parentDiv.addEventListener('click',(event)=>{
+      if(event.target.tagName=='BUTTON'){
+        console.log(event.target.innerText);
+      }
+    })
+  </script>
+</body>
+</html>

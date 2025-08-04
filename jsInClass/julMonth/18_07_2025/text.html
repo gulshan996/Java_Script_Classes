@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+  <style>
+    .gulshan{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  
+  <h2>Gulshan</h2>
+  <h1 id="names">Gulshan</h1>
+  <h3 class="name1">Gulshan</h1>
+
+
+  <script>
+    // let myDate=new Date()
+    // console.log(myDate.toString());
+    // console.log(myDate.toDateString());
+    // console.log(myDate.toLocaleString());
+    // console.log(typeof Array);
+    // console.log(typeof Object);
+    // console.log(typeof Symbol);
+    // console.log(typeof BigInt);
+
+
+    // attribute methods
+    let name2=document.getElementById('names')
+     name2.setAttribute('align', 'center')
+let name3=document.getElementsByClassName('name1')[0]
+console.log(name3);
+  // name3.getAttribute('align')
+  // console.log(name3);
+  let name4=document.getElementsByTagName('h2')
+
+    
+
+// class list 
+
+name3.classList.add('gulshan')
+// name3.classList.remove('gulshan')
+
+
+// name3.toggle('name1')
+
+//Element 
+
+// let x=document.createElement('p')?
+// x.innerText='ram shri ram'
+// name3.prepend(x)
+
+// name2.insertBefore(x,name1);?
+
+
+
+  </script>
+  
+</body>
+</html>

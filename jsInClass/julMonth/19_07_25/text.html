@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="greedMsg">click me</button>
+  <button class="btn">dblclick</button>
+  <button id="btn1"> all click</button>
+  <button id="count"> 1</button>
+  <button id="count1"> 1</button>
+  <script>
+    // let btn=document.getElementsByClassName('btn')[0]
+    // let btn1=document.getElementById('btn1')
+    // console.log(btn);
+    // function  greedMsg(){
+    //   console.log('hello');
+    // }
+
+    // btn.ondblclick=function(){
+    //   console.log('hello');
+    // }
+    // btn1.addEventListener('onclick',()=>{
+    //   console.log('id is cliking');
+    // })
+
+let counts=document.getElementById('count')
+// console.log(count);
+let count=0;
+counts.addEventListener('click',function(){
+  // console.log(count++);
+})
+counts.addEventListener('click',()=>{
+ 
+  counts.innerText= count--
+})
+  </script>
+</body>
+</html>
